@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 window_width = 250
 window_height = 275
 widget_width = window_width / 2
@@ -42,8 +43,6 @@ widget_placing()
 
 def explanation_to_user():
 
-    global localText
-
     if bmiIndex > 0:
         label_explanation.config(text=f"Senin BMI indexin: {bmiIndex}")
         if bmiIndex < 18.5:
@@ -56,6 +55,8 @@ def explanation_to_user():
             label_explanation_two.config(text="Obez Tip 1")
         elif 35.0 < bmiIndex < 100:
             label_explanation_two.config(text="Obez Tip 2")
+
+
 def bmi_calculator():
 
     global bmiIndex
